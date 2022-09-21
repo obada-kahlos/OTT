@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join-travel</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-form.css">
+    
+</head>
+<body>
+
+
+
+   <div class="form jointravel">
+       <h3 class="text-center"> Join Now </h3>
+       <p class="text-center"> What are you waiting for? Join now </p>
+        <form method="POST" action="" name="form" >
+
+            <div class="form-group">
+                <label> First name </label>
+                <input type="text" class="form-control" id="name" name="text" placeholder="First Name" maxlength="12" onkeyup="allLetter(this)" required>
+            </div>
+
+            <div class="form-group">
+                <label> Last name </label>
+                <input type="text" class="form-control" id="name" name="text" placeholder="Last Name" maxlength="12" onkeyup="allLetter(this)" required>
+            </div>
+            
+            <div class="form-group">
+                <label> Email </label>
+                <input type="email" class="form-control" id="Email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label> Mobile Phone </label>
+                <input type="number" class="form-control" id="num" name="num" maxlength="10" placeholder="Your Number" required>
+            </div>
+
+            <button type="submit" class="btn btn-info" > Join </button>
+        </form>
+        <div class="overlay"></div>
+    </div>
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../Organizing/validation.js"></script>
+
+
+</body>
+</html>

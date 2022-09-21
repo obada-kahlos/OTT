@@ -1,0 +1,58 @@
+/*                        Home page                                  */
+.region{
+    margin-top: 30px;
+}
+.table{
+    margin-top: 30px;
+}
+
+/*                      End  Home page                                  */
+
+/*                         start travels                             */
+.travels .card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.travels .card img{
+    width: 100%;
+    height: 250px;
+    
+}
+.travels .card h3{
+    font-size: 22px;
+}
+.travels .card p{
+    font-size: 16px;
+}
+.travels .card .card-footer{
+    background-color: #fff;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    border-top: 0;
+}
+.travels .card .card-footer button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.travels .card .card-footer button a{
+    color: #fff;
+    text-decoration: none;
+}
+/*                         end travels                             */
+
+.the-broplem{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.the-broplem h3{
+    color: #333;
+    margin-bottom: -8px;
+}
+.the-broplem h5{
+    color: #666;
+    margin-bottom: 20px;
+}

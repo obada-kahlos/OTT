@@ -1,0 +1,920 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*                        Start navbar                    */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: all 0.6s ease-in-out;
+    padding: 0;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.nav-link .active {
+    color: #fff;
+    background-color: red;
+}
+.navbar form button{
+    margin-top: 10px;
+}
+.navbar form input{
+    width: 400px;
+    margin-top: 10px;
+}
+
+.navbar .navbar-brand span{
+
+    font-size: 66px;
+    position: absolute;
+    left:20px;
+    top: -12px;
+    color: #38d39f;
+}
+.navbar-nav .nav-link {
+    color: #fff; 
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: uppercase;
+    position: relative;
+
+    transition: all 0.5s ease-in-out;
+}
+.navbar-nav .nav-link:hover{
+    color: #38d39f;
+}
+.navbar-nav .nav-link:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #38d39f;
+    transform: scaleY(3);
+    transition: .5s;
+    opacity: 0;
+}
+
+.navbar-nav .nav-link:hover:before {
+    transform: scaleY(1.1);
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.navbar-nav .nav-link:hover:after {
+    transform: scale(1);
+}
+.navbar .dropdown-menu {
+    border: 1px solid #fff;
+    margin-top: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar .dropdown-menu .dropdown-item{
+    color: #fff;
+    padding: 10px;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+    background-color: #38d39f;
+    color: #fff;
+}
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+    color: #fff;
+}
+
+/*                          End navbar                          */
+
+
+
+/*                             Start Header                              */
+header {
+    background: url('../image/pexels-leah-kelley-3935702.jpg') no-repeat fixed center center;
+    background-size: cover;
+    padding: 0 0 60px 0;
+    margin-top: 0;
+    font-family: serif;
+}
+
+header .text {
+    margin-top: 140px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 20px;
+}
+header .text{
+    text-transform: capitalize;
+}
+header .text h3{
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+header .text span {
+    color:  #38d39f;
+}
+
+header .text h5{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+header .text h4{
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    
+}
+header .text p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+header .text ul h3{
+    color: #fff;
+    font-size: 26px;
+}
+header .text ul li{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+}
+header .text p a{
+    font-size: 20px;
+    color: #38d39f;
+    text-decoration: none;
+    background-color:  #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+ 
+}
+header .text p a:hover{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color:  #38d39f;
+    border-radius: 8px;
+
+    padding: 10px 20px;
+}
+header .info {
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+header .info  h3{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .5px;
+    font-size: 35px;
+    color:#fff;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background: linear-gradient(to right, #3a5a81 , #d31336 , #252131 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+header .info .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+/* Card */
+header .info .card {
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+header .info .card img {
+    width: 100%;
+height: 200px;
+}
+header .info .card-header{
+    background-color: #fff;
+}
+
+header .info .card-footer{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header .info .card-footer .card-link{
+    color: #fff;
+    background-color: rgb(255, 58, 58);
+    padding: 10px 20px;
+}
+
+
+/*                               End Header                                       */
+
+
+/*                                      start fillter                                         */
+.fillter{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #dfdde8;
+    padding: 30px;
+}
+.fillter .container{
+    background-color: #1e1c67;
+    padding: 30px 20px 20px 30px;
+}
+
+/*                                      end fillter                                         */
+
+
+/*                                 start  travel                                                */
+.Travel {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Travel h3{
+    font-size: 35px;
+    font-family: montserrat,sans-serif;
+    font-weight: 900;
+    color: #333;
+    position: relative;
+    padding-bottom: 25px;
+}
+.Travel  .card {
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.Travel  .card img {
+    width: 100%;
+    height: 200px;
+    transition: all 0.4s ease-in-out;
+    
+}
+.Travel .card-header{
+    background-color: #fff;
+}
+
+.Travel .card-footer{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Travel .card-footer .book-now{
+    color: #fff;
+    background-color: #47b2e4;
+    border: 1px solid #47b2e4;
+    padding: 10px 20px;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+.Travel .card-footer .book-now:hover{
+    color: #47b2e4;
+    background-color: #fff;
+    border: 1px solid #47b2e4;
+    padding: 10px 20px;
+}
+.Travel .card-footer .travel-info{
+    color: #fff;
+    background-color: #38d39f;
+    border: 1px solid #38d39f;
+    padding: 10px 20px;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+.Travel .card-footer .travel-info:hover{
+    color: #38d39f;
+    background-color: #fff;
+    border: 1px solid #38d39f;
+    padding: 10px 20px;
+}
+
+.Travel  .card img:hover {
+    transform: scale(1.020);
+}
+
+
+
+/*                                 End  travel                                                */
+
+/*                                             start Why Us                                      */
+
+.why{
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+.why h3{
+    font-size: 35px;
+    font-family: montserrat,sans-serif;
+    font-weight: 900;
+    color: #333;
+    position: relative;
+    padding-bottom: 25px;
+}
+.why h3::before{
+    content: "";
+    background:#7f08c4;
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 15px;
+    transform: translateX(-50%);
+}
+.why .col{
+    border-right: 2px solid #ddd;
+}
+.why i{
+    cursor: pointer;
+    font-size: 60px;
+    padding: 10px;
+    margin-bottom: -5px;
+    color:#66676c;
+    color: #38d39f;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.why i:hover{
+    color: #38d39f;
+
+}
+.why h4{
+    color: #a4a2ad;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.why p{
+    color: #6b6976;
+    font-size: 16px;
+}
+
+/*                                             end Why Us                                                    */
+
+
+/*                                                  start imazing-travel                  */
+.imazing-travel{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.imazing-travel h3{
+    font-size: 35px;
+    font-family: montserrat,sans-serif;
+    font-weight: 900;
+    color: #333;
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.imazing-travel h3::before{
+    content: "";
+    background: #7f08c4;
+    width: 300px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 15px;
+    transform: translateX(-50%);
+}
+
+
+.imazing-travel .cardd{
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.imazing-travel .cardd img{
+    width: 100%;
+    height: 300px;
+}
+
+.imazing-travel img{
+    width: 100%;
+    height: 400px;
+    transition: all 0.4s ease-in-out;
+}
+
+.imazing-travel img.img-right{
+    width: 100%;
+    height: 610px;
+}
+.imazing-travel .right{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 18px;
+}
+.imazing-travel .right h6{
+    color: #fff;
+    padding: 5px 8px;
+    border-bottom: 2px solid #fff;
+    font-weight: 800;
+}
+
+.imazing-travel .bottom{
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.imazing-travel .bottom p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+.imazing-travel .bottom a{
+    color: #fff;
+    text-decoration: none;
+}
+.imazing-travel .bottom button{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+.imazing-travel .bottom button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.imazing-travel img:hover{
+    opacity: 0.8;
+}
+/*                                         end imazing-travel                   */
+
+
+/*                                   start more-trips                                 */
+.more-trips{
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.more-trips .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.more-trips h3{
+    font-size: 35px;
+    font-family: montserrat,sans-serif;
+    font-weight: 900;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.more-trips h3::before{
+    content: "";
+    background: #7f08c4;
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 15px;
+    transform: translateX(-50%);
+}
+.more-trips  .book-now{
+    color: #fff;
+    background-color: rgb(255, 58, 58);
+    padding: 10px 20px;
+    transition: all 0.4s ease-in;
+}
+.more-trips  .book-now:hover{
+    color: rgb(255, 58, 58);
+    background-color: #fff;
+    border: 1px solid rgb(255, 58, 58);
+    padding: 10px 20px;
+}
+.more-trips  .travel-info{
+    color: #fff;
+    background-color: #38d39f;
+    padding: 10px 20px;
+    transition: all 0.4s ease-in;
+
+}
+.more-trips .travel-info:hover{
+    color: #38d39f;
+    background-color: #fff;
+    border: 1px solid #38d39f;
+    padding: 10px 20px;
+}
+
+/*                                     end .more-trips             */
+
+
+
+
+/*                              start contact us                             */
+.contact-us{
+    padding: 40px 0;
+    background-color:  #38d39f;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.contact-us p{
+    margin: 0;
+    text-transform: capitalize;
+}
+.contact-us a{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 20px 10px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+/*                          end contact us                                  */
+
+
+/*                                   Start foter                                                   */
+#footer{
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 120px 0;
+    margin-top: 0;
+}
+#footer .footer-top  h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    line-height: 1;
+    font-weight: 300;
+    color: #fff;
+} 
+#footer .footer-top .footer-contact p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+#footer .footer-top .footer-links ul li {
+    margin-bottom: 20px;
+}
+#footer .footer-top .footer-links ul li i {
+    color: #38d39f;
+}
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 2;
+}
+
+
+#footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-bottom{
+    background-color: #444;
+}
+.footer-bottom .copyright{
+    color: #fff;
+    font-size: 20px;
+}
+.footer-bottom  .credits{
+    font-size: 22px;
+    color: #fff;
+}
+.footer-bottom .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #2487ce;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 5px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+
+/*                                   End foter                                                   */
+
+
+/*                                          start rating                                           */
+.rating ul {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.rating ul>li.star {
+    display: inline-block;
+}
+
+.rating ul>li.star>i.fa {
+    color: #ccc;
+}
+
+.rating ul>li.star.hover>i.fa {
+    color: #f8d249;
+}
+
+.rating ul>li.star.selected>i.fa {
+    color: #fac70f;
+}
+/*                                                      end rating                          */
+
+/* Handle on hover */
+
+/*                                        buttom-up                               */
+#buttom-up{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom:0;
+    z-index: 999;
+}
+#buttom-up i{
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 60px;
+    color: #38d39f;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/********************************            Start Problem Page         *************************************/
+.Problem{
+    background-color: #fff;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+.Problem .contact{
+    margin-top: 40px;
+    z-index: 1;
+}
+.Problem .contact h4{
+    color:#38d39f;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.Problem .contact input{
+    border: none;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    transition: all 0.4s ease;
+}
+.Problem .contact input:hover{
+    border: none;
+    color: #333;
+    border-bottom: 2px solid #38d39f;
+}
+.Problem .contact input:focus{
+    box-shadow: none;
+    border-bottom: 2px solid #38d39f;
+}
+.Problem .contact textarea{
+    border: none;
+    border-bottom: 2px solid #ddd;
+    transition: all 0.4s ease;
+}
+.Problem .contact textarea:hover{
+    border-bottom: 2px solid #38d39f;
+}
+.Problem .contact textarea:focus{
+    box-shadow: none;
+    border-bottom: 2px solid #38d39f;
+}
+.Problem .contact button{
+    outline: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    float: right;
+    border: 2px solid #38d39f;
+    color: #38d39f;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+    z-index: 999;
+}
+.Problem .contact button:hover{
+    color: #fff;
+    border: 2px solid #38d39f;
+    background-color: #38d39f;
+}
+.Problem .contact button:focus{
+   outline: none;
+}
+.Problem img{   
+    margin-left: 30px;
+    filter: drop-shadow(3px 3px 2px #38d39f);
+    z-index: 999;
+}
+.Problem span{
+    transition: all 0.5s ease-in-out;
+}
+.Problem span.one{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    background-color: rgba(0, 255, 213,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+.Problem span.tow{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-color: rgba(0, 255, 213,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+.Problem span.three{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    background-color: rgba(0, 255, 213,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+.Problem span.for{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    background-color: rgba(0, 255, 213,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.Problem span.five{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: rgba(0, 255, 213,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+.Problem span.five a {
+    color: #fff;
+    text-decoration: none;
+    z-index: 999;
+} 
+.Problem span.five a i{
+    margin-top: 10px;
+    margin-bottom: -10px;
+} 
+.Problem span.five a i p{
+    color: #fff;
+    text-decoration: none;
+    z-index: 999;
+    margin-top: -10px;
+    text-align: center;
+} 
+.Problem span:hover{
+    transform: scale(1.050);
+    filter: brightness(250%);
+}
+
+/********************************            End Problem Page         *************************************/
+
+
+
+
+
+/********************************            start search-info        *************************************/
+
+.search-info{
+    background-color: #fff;
+    color: #333;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.search-info .fa-search{
+    color: #333;
+    border-radius: 0;
+    width: 50px;
+}
+/********************************            End search-info        *************************************/
+
+/*    start looding     */
+.loading-overlay{
+    background: #38d39f;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.spinner {
+    margin: 100px auto;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+
+/*     end looding      */ 

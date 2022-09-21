@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-organizing.css">
+    <link rel="stylesheet" href="slider.css">
+    
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="image">
+            <img src="../image/nourman.jpg" alt="" >
+            <h6> Nourman Al laham </h6>
+        </div>
+        <a href="../main-interface/Home-page.html"> <i class="fa fa-home fa-x2"></i> Home</a>
+        <a class="active" href="#">Orgnaizing</a>
+        <a href="Add-travel.html">Add Travel</a>
+        <a href="Denied-trips.html"> Denied trips </a>
+        <a href="#"> Log Out </a>
+
+
+
+        
+        <ul class="list-unstyled">
+            <li> <i class="fa fa-facebook fa-lg"></i> </li>
+            <li> <i class="fa fa-whatsapp fa-lg"></i> </li>
+            <li> <i class="fa fa-telegram fa-lg"></i> </li>
+        </ul>
+
+    </div>
+
+    <div class="toggle" onclick="toggleMenu()"></div>
+      
+    <div class="content">
+        
+
+        <div class="container organizing">
+            
+            <h2> Organizng Name </h2>
+            <h3> Camping trips in Syria: There are a lot of camping trips in all Syrian governorates, so what are you waiting for? Book one now </h3>
+            <h5> <i class="fa fa-envelope fa-lg"></i> Orgnaizing@gmail.com </h5>
+            <p> <i class="fa fa-phone fa-lg"></i> +963 0997741497  </p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Edit</button>
+
+            <hr>
+            <div class="row My-travel">
+                
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="../image/output-onlinejpgtools (4).jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title"> name the travel </h4>
+                            <p> Discription .................</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger"><a href="info-customer.html"> Customer Info </a></button>
+                            <button type="button" class="btn btn-danger"><a href="info-travel.html"> Info Travel </a></button>
+                            <br>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Edit">Edit</button>
+
+                            <button type="button" class="btn btn-info"><a href="#"> Delete </a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card ">
+                        <img src="../image/output-onlinejpgtools (3).jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title"> name the travel </h4>
+                            <p> Discription .................</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger"><a href="info-customer.html"> Customer Info </a></button>
+                            <button type="button" class="btn btn-danger"><a href="info-travel.html"> Info Travel </a></button>
+                            <br>
+                            <button type="button" class="btn btn-sucssecc" data-toggle="modal" data-target="#Edit">Edit</button>
+
+                            <button type="button" class="btn btn-info"><a href="#"> Delete </a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card ">
+                        <img src="../image/output-onlinejpgtools (2).jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title"> name the travel </h4>
+                            <p> Discription .................</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger"><a href="info-customer.html"> Customer Info </a></button>
+                            <button type="button" class="btn btn-danger"><a href="info-travel.html"> Info Travel </a></button>
+                            <br>
+                            <button type="button" class="btn btn-sucssecc" data-toggle="modal" data-target="#Edit">Edit</button>
+
+                            <button type="button" class="btn btn-info"><a href="#"> Delete </a></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card ">
+                        <img src="../image/output-onlinejpgtools (5).jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title"> name the travel </h4>
+                            <p> Discription .................</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger"><a href="info-customer.html"> Customer Info </a></button>
+                            <button type="button" class="btn btn-danger"><a href="info-travel.html"> Info Travel </a></button>
+                            <br>
+                            <button type="button" class="btn btn-sucssecc" data-toggle="modal" data-target="#Edit">Edit</button>
+                            <button type="button" class="btn btn-info"><a href="#"> Delete </a></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+   
+    
+      
+      <!-- edit info Orgnaizing  -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Edit Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form method="" action="">
+                    <div class="row">
+                
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="Username">User Name</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="User Name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Username">Number</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="Number" name="numb">
+                            </div>
+                                
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">female</label>
+                            </div>
+                        </div> 
+                  
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control form-control-sm" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Password</label>
+                                <input type="password" class="form-control form-control-sm" placeholder="Password" name="pass">
+                            </div>
+                        </div> 
+            
+                    </div>
+      
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+       <!----------------- Edit info trip  ------------------------>
+       <div class="modal fade" id="Edit" data-backdrop="static" style="padding: 20px;" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Edit</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    
+                <div class="form-group">
+                    <label for="sel1">Select list:</label>
+                    <select class="form-control" id="sel1" required>
+                      <option>Sea</option>
+                      <option>Sky</option>
+                      <option>Road</option>
+                    </select>
+                </div>
+    
+    
+    
+                <div class="form-group">
+                    <label>discription</label>
+                    <textarea class="form-control" cols="4" rows="4" placeholder="discription....." required>  </textarea>
+                </div>
+    
+    
+    
+    
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Start Go </label>
+                            <input type="date" class="form-control" id="startgo" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Return </label>
+                            <input type="date" class="form-control" id="endgo" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Price </label>
+                            <input type="number" class="form-control" id="price" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Place </label>
+                            <input type="text" class="form-control"  id="Place" name="text"  maxlength="24"onkeyup="allLetter(this)" required >
+                        </div>
+                    </div>
+                </div>
+                
+    
+    
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Starting Place </label>
+                            <input type="text" class="form-control" maxlength="20" name="text"  id="From-where" onkeyup="allLetter(this)" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Pepole Number </label>
+                            <input type="number" class="form-control" id="From-where" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Traveled Distance </label>
+                            <input type="text" class="form-control" name="text"  id="From-where" onkeyup="allLetter(this)" required>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose Photo</label>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="validation.js"></script>
+    <script src="javascript.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*                                  start .sidebar                                                */
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.sidebar .image{
+    position: relative;
+}
+.sidebar .image img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sidebar .image h6::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+.sidebar .image h6{
+   text-align: center;
+   color: #fff;
+   margin-top: -10px;
+}
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+.sidebar a.active {
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color:rgb(0, 162, 255);
+    color: white;
+}
+.sidebar ul{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease-in; 
+}
+
+.sidebar li{
+    display: inline;
+    padding: 22px;
+  
+}
+.sidebar li i{
+    cursor: pointer;
+    transition: all 0.4s ease-in; 
+    color: #fff;
+}
+.sidebar li i:hover{
+    color: rgb(190, 190, 190);
+}
+
+
+
+div.content {
+    margin-left: 240px;
+    padding: 1px 16px;
+}
+
+.toggle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+}
+.toggle.active{
+    background-color: rgb(0, 162, 255);
+}
+.toggle::before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active::before{
+    content: '\f00d';
+}
+@media (max-width : 650px){
+    .sidebar{
+        display: none;
+        height: 100%;
+        z-index: 999;
+        margin-top: -40px;
+    }
+    div.content{
+        margin-left: 0;
+        padding: 0;
+    }
+    .toggle{
+        display: block;
+    }
+}
+/* @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+    .sidebar .image{
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .sidebar ul{
+        display: none; 
+    }
+    .sidebar li{
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+    text-align: center;
+    float: none;
+    }
+} */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 162, 255); 
+
+}
+
+/*                                          end .sidebar                                         */

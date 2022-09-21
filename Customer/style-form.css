@@ -1,0 +1,34 @@
+body{
+    width:90%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: url('../image/pexels-leah-kelley-3935702.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+.jointravel{
+    position: absolute;
+    width : 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    z-index: 1005;
+} 
+.jointravel button{
+    width: 120px;
+}
+/* .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51,0.3);
+} */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Customer/style-form.css">
+    <link rel="stylesheet" href="style-Admin.css">
+    <link rel="stylesheet" href="../Organizing/slider.css">
+
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <a href="../main-interface/Home-page.html"> <i class="fa fa-home fa-x2"></i> Home</a>
+        <a class="active" href="#"> Admin</a>
+        <a  href="travels.html">Travels</a>
+        <a href="Problem.html"> Problem </a>
+        <a href="#"> Log Out </a>
+
+
+        <ul class="list-unstyled">
+          <li> <i class="fa fa-facebook fa-lg"></i> </li>
+          <li> <i class="fa fa-whatsapp fa-lg"></i> </li>
+          <li> <i class="fa fa-telegram fa-lg"></i> </li>
+        </ul>
+    </div>
+      
+    <div class="content">
+        
+        <div class="container region">
+        <h3> Add a region </h3>
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <button class="btn btn-danger">Add region</button>
+                    </form>
+                </div>
+            </div>
+
+            <table class="table table-striped table-responsive-sm">
+                <caption>Number The Region Is </caption>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Region</th>
+                    <th> Edit </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>kafarsousa</td>
+                     <td> <button class="btn btn-info" type="button" data-toggle="modal" data-target="#Edit">Edit</button></td> 
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>amara</td>
+                    <td> <button class="btn btn-info" type="button" data-toggle="modal" data-target="#Edit">Edit</button></td> 
+
+
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>medan</td>
+                    <td> <button class="btn btn-info" type="button" data-toggle="modal" data-target="#Edit">Edit</button></td> 
+
+
+
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+       
+
+    </div>
+
+
+
+      <!-- edit Region -->
+      <div class="modal fade" id="Edit" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Region Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form method="" action="">
+                    <div class="form-group">
+                      <label for="text">Region</label>
+                      <input type="text" class="form-control form-control-sm" placeholder="Region" name="Region">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="validation.js"></script>
+    <script>
+
+    </script>
+
+
+</body>
+</html>

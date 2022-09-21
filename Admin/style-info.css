@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.info-travel{
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.info-travel .carousel{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.info-travel .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin-bottom: 20px;
+}
+.card-info .information {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.card-info .information:hover {
+    background-color: #333;
+    border: 1px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.card-info .information h4{
+    color: #222;
+    margin-bottom: -5px;
+    font-weight: 800;
+    font-size: 18px;
+    transition: all 0.5s ease-in;
+
+}
+.card-info .information:hover h4{
+    color: #fff;
+}
+.card-info .information p{
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+    color:  #38d39f;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #38d39f;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/100% 100%;
+    color: #38d39f;
+}
+
+.info-travel .card-footer{
+    background-color: #fff;
+    margin-top: 10px;
+    border-top: none;
+}
+.info-travel .card-footer .book-now{
+    color: #fff;
+    background-color: rgb(255, 58, 58);
+    padding: 10px 20px;
+    transition: all 0.4s ease-in;
+}
+.info-travel .card-footer .book-now:hover{
+    color: rgb(255, 58, 58);
+    background-color: #fff;
+    border: 1px solid rgb(255, 58, 58);
+    padding: 10px 20px;
+}
+.info-travel .card{
+    padding: 20px;
+}
+.info-travel .info-mahata{
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px
+}
+.info-travel .info-mahata h3{
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+} 
+
+.info-travel .info-mahata  p{
+    font-weight: bold;
+    color: #444;
+    font-size: 20px;
+    margin-top: 10px;
+}   
+.info-travel .info-mahata .left {
+    margin-top: 40px
+}
+.info-travel .info-mahata .left h4{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.info-travel .info-mahata .left h5{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 0
+}
+.info-travel .info-mahata .left p{
+    font-weight: bold;
+    color: #555;
+    font-size: 20px;
+    margin-top: 10px;
+} 
+.info-travel .info-mahata .left li{
+    display: inline-block;
+    color: #fac70f;
+}    
+.info-travel .info-mahata img{
+    width: 300px;
+    height:150px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in;
+}
+.info-travel .info-mahata img:hover{
+    
+   transform: scale(1.040)
+}
+.info-travel p a{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgb(202, 29, 29);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-weight: bolder;
+    transition: all 0.4s ease-in;
+}
+.info-travel p a:hover{
+   color: rgb(202, 29, 29);
+   background-color: #fff;
+   border: 1px solid rgb(202, 29, 29);
+}
+
+.social{
+    position: fixed;
+    top: 75%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+.social i {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.social i.fa-facebook{
+    margin-left: 2px;
+}
+.social i.fa-telegram{
+    margin-left: -2px;
+}
+
+/*           End-info-travel                   */
+

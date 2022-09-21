@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../image/too.jpg') no-repeat fixed right center;
+    background-size: cover;
+}
+#too {
+    width: 100%;
+    height: 95vh;
+}
+
+#too h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#too h3{
+    position: relative;
+    color:#47b2e4;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#too h3:before {
+    content: "";
+    background: #47b2e4;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 50px;
+    top: 35px;
+    margin-bottom: 5px;
+    transform: translateX(-50%);
+}
+#too ul h4{
+    color: #fff;
+
+}
+#too ul li{
+    color: #fff;
+    font-weight: bolder;
+}
+#too p{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+#too .btn-get-started {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background: #47b2e4;
+    text-decoration: none;
+    margin-bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+#too .btn-get-started:hover {
+    background: #209dd8;
+}
+#too .animated {
+    margin-top: 200px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;  
+}
+
+#too .info{
+    margin-top: 100px;
+}
+#too .seaimage {
+    margin-top: 200px;
+}
+#too .Overhanging{
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+}
+  @media (max-width: 1024px) {
+    #too {
+      height: auto;
+      text-align: center;
+    }
+    #too .animated {
+        margin-top: 40px;
+    }
+    #too .too-img {
+         text-align: center;
+    }
+    #too .too-img img {
+         width: 80%;
+    }
+    #too .seaimage{
+        margin-bottom: -100px;
+    }
+  }
+
+@media (max-width: 768px) {
+    #too h1 {
+        margin: 0 0 10px 0;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #fff;
+    }
+
+    #too h3{
+        position: relative;
+        color:#47b2e4;
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+        #too p{
+        color:#fff;
+        font-size: 16px;
+    }
+    #too .too-img img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    #too .too-img img {
+        width: 70%;
+    }
+    #too .btn-get-started {
+        font-size: 16px;
+        padding: 10px 24px 11px 24px;
+    }
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+

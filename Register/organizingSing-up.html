@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+
+</head>
+<body>
+
+
+  <img class="wave" src="../image/wave.png">
+
+	<div class="container orgnizing">
+		<div class="img">
+        <img src="../image/Customer.svg" alt="">
+    </div>
+    
+		<div class="login-content">
+			<form action="#" name="form">
+        
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fa fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<input type="text" class="input" placeholder="Username">
+           		   </div>
+               </div>
+               
+               <div class="row">
+                   <div class="col">
+                    <div class="input-div pass">
+                        <div class="i"> 
+                             <i class="fa fa-lock"></i>
+                        </div>
+                        <div class="div">
+                             <input type="password" class="input" placeholder="Password" name="passone">
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col">
+                    <div class="input-div pass password">
+                        <div class="i"> 
+                             <i class="fa fa-lock"></i>
+                        </div>
+                        <div class="div">
+                          <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password" style="z-index: 999;"></span>
+                          <input type="password" id="pass_log_id" placeholder="Password" required name="passtow"/>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+           	
+              
+                <div class="input-div pass">
+                  <div class="i"> 
+                      <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="div">
+                      <input type="email" class="input" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="input-div pass">
+                  <div class="i"> 
+                      <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="div">
+                      <input type="tel" class="input" placeholder="mopile">
+                  </div>
+                </div>
+
+                <div class="input-div pass">
+                  <div class="i"> 
+                      <i class="fa fa-location-arrow"></i>
+                  </div>
+                  <div class="div">
+                      <input type="text" class="input" placeholder="Location">
+                  </div>
+                </div>
+
+              
+              <input type="checkbox" style="float: left; margin-top: 10px;" class="check"> <span class="checkk" style="float: left ; margin-top: 5px;">Remmumber</span>
+              
+            	<a href="Log-in.html">Have An Account?</a>
+              <input type="submit" class="btn" value="Login">
+              
+            </form>
+        </div>
+        <a href="../main-interface/Home-page.html" class="Browes"> Browes Now </a>
+        <div class="daden"></div>
+    </div>
+
+
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+          <div class="close-btn" onclick="togglepopup()">&times;</div>
+          <h3>Create</h3>
+          <form>
+              <input type="email" name="email" id="email" placeholder="Email">
+              <input type="password" name="pass" id="pass" placeholder="password">
+              <button class="btn btn-info btn-block" >Send</button>
+          </form>
+      </div>
+    </div>
+
+  
+    
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="javascript.js"></script>
+
+  
+
+
+</body>
+</html>

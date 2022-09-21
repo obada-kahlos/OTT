@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Teavel</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Customer/style-form.css">
+    <link rel="stylesheet" href="style-organizing.css">
+    <link rel="stylesheet" href="slider.css">
+    <style>
+    </style>
+    
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <div class="image">
+            <img src="../image/nourman.jpg" alt="" >
+            <h6> Nourman Al laham </h6>
+        </div>
+        <a href="../main-interface/Home-page.html"> <i class="fa fa-home fa-x2"></i> Home</a>
+        <a  href="homepage.html"> Orgnaizing</a>
+        <a class="active" href="Add-travel.html">Add Travel</a>
+        <a href="Denied-trips.html"> Denied Trips </a>
+        <a href="#"> Log Out </a>
+
+
+        <ul class="list-unstyled">
+            <li> <i class="fa fa-facebook fa-lg"></i> </li>
+            <li> <i class="fa fa-whatsapp fa-lg"></i> </li>
+            <li> <i class="fa fa-telegram fa-lg"></i> </li>
+        </ul>
+    </div>
+      
+    <div class="content">
+        <div class="form">
+            <form method="POST" action="" name="form" id="form1">
+                
+    
+                <div class="form-group">
+                    <label for="sel1">Select list:</label>
+                    <select class="form-control" id="sel1" required>
+                      <option>Sea</option>
+                      <option>Sky</option>
+                      <option>Road</option>
+                    </select>
+                </div>
+    
+    
+    
+                <div class="form-group">
+                    <label>discription</label>
+                    <textarea class="form-control" cols="4" rows="4" placeholder="discription....." required>  </textarea>
+                </div>
+    
+    
+    
+    
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Start Go </label>
+                            <input type="date" class="form-control" id="startgo" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Return </label>
+                            <input type="date" class="form-control" id="endgo" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Price </label>
+                            <input type="number" class="form-control" id="price" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Place </label>
+                            <input type="text" class="form-control"  id="Place" name="text"  maxlength="24"onkeyup="allLetter(this)" required >
+                        </div>
+                    </div>
+                </div>
+                
+    
+    
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Starting Place </label>
+                            <input type="text" class="form-control" maxlength="20" name="text"  id="From-where" onkeyup="allLetter(this)" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Pepole Number </label>
+                            <input type="number" class="form-control" id="From-where" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label> Traveled Distance </label>
+                            <input type="text" class="form-control" name="text"  id="From-where" onkeyup="allLetter(this)" required>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose Photo</label>
+                </div>
+                
+    
+    
+    
+                <div class="row" id="Station" >
+    
+                    <div class="col-md-2 col-sm-12 Add-mahata text-center">
+                        <h3> أضافة محطة جديدة  </h3>
+                        <button type="button" class="btn btn-danger" id="Button1">  <i class="fa fa-plus fa-lg"></i> </button>
+                    </div>
+                    <div class="col-md-10 col-sm-12 mahata">
+                        <div class="row" class="Add-Station" id="Container">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>start</label>
+                                    <input type="text" class="form-control"  name="text"  maxlength="24" onkeyup="allLetter(this)" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label>end</label>
+                                    <input type="text" class="form-control"  name="text"  maxlength="24" onkeyup="allLetter(this)" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group more">
+                                    <label for="sel1">Select list:</label>
+                                    <select class="form-control" id="sel1" required>
+                                      <option>Hotel</option>
+                                      <option>Soper Market</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group more">
+                                    <label>discription</label>
+                                    <textarea class="form-control" cols="2" rows="2"></textarea>
+                                </div>
+    
+                            </div>
+                            <div class="col">
+                                <div class="form-group more">
+                                    <label> Name of mahata </label>
+                                    <input type="text" class="form-control" id="Place" name="text"  maxlength="24" onkeyup="allLetter(this)" required>
+                                </div>
+    
+                                <div class="custom-file more" style="margin-top: 30px;">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose Photo</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div id="new-Station">
+        
+                        </div>
+    
+                    </div>
+                 </div>
+    
+                <button type="submit" class="btn btn-info" style="margin-top: 40px;"> Add The Travel </button>
+    
+                
+            </form>
+        </div>
+        
+    </div>
+
+
+    <!-- edit info Orgnaizing  -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Edit Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form method="" action="">
+                    <div class="form-group">
+                        <label for="email">Password</label>
+                        <input type="password" class="form-control form-control-sm" placeholder="Password" name="pass">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   
+    <div class="toggle" onclick="toggleMenu()"></div>
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="validation.js"></script>
+    <script src="javascript.js"></script>
+
+
+</body>
+</html>

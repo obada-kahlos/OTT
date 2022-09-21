@@ -1,0 +1,94 @@
+
+/***************************************    Organizng Home page     *******************************************/
+
+.container.organizing {
+    margin-top: 40px;
+}
+
+.container.organizing h2 {
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: 800;
+}
+
+.container.organizing h3 {
+    max-width: 800px;
+    margin-bottom: 20px;
+    color: 333;
+    
+}
+
+.container.organizing h5 {
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: #444;
+}
+.container.organizing p {
+    margin-bottom: 20px;
+    color: #444;
+}
+.container.organizing i{
+    margin-right: 20px;
+    color: rgb(0, 162, 255);
+    font-size: 18px;
+}
+
+.container.organizing .My-travel{
+    margin-top: 30px;
+}
+.container.organizing .My-travel .card{
+   margin-bottom: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+   border-radius: 0;
+}
+.container.organizing .My-travel .card img{
+    width: 100%;
+    height: 250px;
+}
+.container.organizing .My-travel .card .card-footer{
+    background-color: #fff;
+    border-top: none;
+}
+.container.organizing .My-travel .card .card-footer button{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;    
+}
+.container.organizing .My-travel .card .card-footer button a{
+    color: #fff;
+    text-decoration: none; 
+}
+/***************************************    End Organizng Home page     *******************************************/
+
+/***************************************   start info-customer-join-travel     *******************************************/
+.content .table{
+    margin-top: 40px;
+}
+.content form{
+    margin: 20px;
+}
+
+#Station{
+    padding: 10px;
+    background-color: #ddd;
+    border: 2px solid #eee;
+    margin-top: 30px;
+
+}
+#Station .Add-mahata{
+    border: 2px solid #fff;
+    padding: 20px;
+    
+}
+#Station .mahata{
+    border: 2px solid #fff;
+}
+
+
+/***************************************  End info-customer-join-travel     *******************************************/
+
+
+.number input{
+    width: 120px;
+    margin-right: 60px;
+}
